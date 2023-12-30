@@ -1,0 +1,10 @@
+app = "omikujiapp"
+region = "nrt"
+
+[[services]]
+  internal_port = 3000
+  protocol = "tcp"
+
+  [[services.ports]]
+  handlers = ["tls", "http"]
+  port = 443
